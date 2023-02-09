@@ -5,4 +5,4 @@ lint:
 	poetry run flake8
 
 install:
-	pip install -r requirements.txt
+	pip install -r requirements.txta
