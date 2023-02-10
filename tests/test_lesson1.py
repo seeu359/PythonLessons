@@ -1,5 +1,5 @@
-from lesson_1 import repetition
-from lesson_1 import practice
+from learn_python.lesson_1 import practice, repetition
+
 
 def test_string_len():
     assert repetition.string_length == 23
