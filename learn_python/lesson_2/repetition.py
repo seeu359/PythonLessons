@@ -47,7 +47,7 @@ heroes_name = 'Tyrion'
 # и сохранить его в переменную last_index
 
 
-string2 = 'I am a very long string and I have a lot of information about all ' \
-         'recent events and not only about them. problemtic. I\'m so long ' \
-          'that counting the last index won\'t work and finding the last ' \
-          'character using the find method will be problematic.'
+string2 = 'I am a very long string and I have a lot of information about ' \
+          'all recent events and not only about them. problemtic. I\'m ' \
+          'so long that counting the last index won\'t work and finding ' \
+          'the last character using the find method will be problematic.'

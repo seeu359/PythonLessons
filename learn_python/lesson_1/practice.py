@@ -37,4 +37,3 @@ string = 'I say yes and another yes for your offer'
 # в переменной string_upper
 
 another_string = 'string in lower register'
-
