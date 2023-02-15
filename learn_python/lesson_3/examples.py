@@ -2,12 +2,16 @@ def pow(number, base=2):
     return number ** base
 
 
-def hello(a=None, name=None, length=None):
+def some_func(a=None, name=None, length=None):
     return
 
 
 def truncate(length=3, text='My Text'):
     return length, text
+
+
+a = truncate(text='Some text', length=12)
+b = truncate(text='Another text')
 
 
 def is_infant(age):
