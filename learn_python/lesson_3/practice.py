@@ -56,5 +56,3 @@
 # has_upper_case('')  # => False
 # has_upper_case('python')  # => False
 # has_upper_case('pyThon')  # => True
-
-...

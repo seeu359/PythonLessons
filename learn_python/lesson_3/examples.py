@@ -2,16 +2,16 @@ def pow(number, base=2):
     return number ** base
 
 
-def some_func(a=None, name=None, length=None):
+def some_func1(a=None, name=None, length=None):
     return
 
 
-def truncate(length=3, text='My Text'):
+def truncate(param, length=3, text='My Text'):
     return length, text
 
 
-a = truncate(text='Some text', length=12)
-b = truncate(text='Another text')
+_a = truncate('param', text='Some text', length=12)
+_b = truncate('param1', length=1)
 
 
 def is_infant(age):
@@ -20,3 +20,7 @@ def is_infant(age):
 
 def first_letter_is_a(string):
     return string[0] == 'a'
+
+
+def is_even(number):
+    return number % 2 == 0
