@@ -6,7 +6,8 @@
 # тип данных
 
 
-...
+def is_good_apartment(square, street_name):
+    return (square >= 80 and street_name == 'Main Street') or square >= 100
 
 
 # №2 Реализуй функцию string_or_not(), которая проверяет является ли
@@ -40,9 +41,6 @@
 # уменьшать. По окончании работы функция должна вывести строку finished!.
 
 
-...
-
-
 # №5 Реализуем функцию sum_numbers_from_range,
 # которая складывает числа в указанном диапазоне, и возвращает результат.
 
@@ -61,3 +59,12 @@
 # join_numbers_from_range(5, 10)  # '5678910'
 
 ...
+
+
+a = 0
+
+a += 1
+a += 1
+a += 10
+
+print(a)
