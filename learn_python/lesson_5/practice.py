@@ -6,9 +6,7 @@
 # Примеры:
 # string = 'If I look back I am lost'
 # print(my_substr(string, 1))  # => 'I'
-# print(my_substr(string, 7))  # => 'If I lo'
-
-...
+# print(my_substr(string, -1))  # => 'If I lo'
 
 
 # №2
@@ -18,9 +16,6 @@
 
 # reverse_string('Game Of Thrones')  # 'senorhT fO emaG'
 # reverse_string('Kirill')  # 'lliriK'
-
-
-...
 
 
 # №3
@@ -73,5 +68,3 @@
 # Создай функцию get_num_dividers(). Функция принимает число.
 # С помощью цикла for найти все делители этого
 # числа. Найденные делители выводить сразу в столбик без формирования списка.
-
-...
