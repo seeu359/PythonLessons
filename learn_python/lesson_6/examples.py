@@ -8,10 +8,11 @@ def work_with_import():
     return False
 
 
-def div_mod(a, b):
-    quotient = a // b
-    modulo = a % b
+def div_mod(num1, num2):
+    quotient = num1 // num2
+    modulo = num1 % num2
     return (quotient, modulo)
+
 
 #
 #

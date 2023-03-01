@@ -1,3 +1,6 @@
+var = 20
+
+
 def util_func(number):
     return number * number
 

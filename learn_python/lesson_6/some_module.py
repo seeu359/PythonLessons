@@ -1,1 +1,6 @@
-a = 50
+def validate_email():
+    ...
+
+
+def validate_pass():
+    ...
