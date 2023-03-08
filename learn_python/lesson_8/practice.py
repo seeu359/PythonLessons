@@ -11,7 +11,8 @@
 # заменить в списке1 часть списка по индексам на список2. Функцию должна
 # возвращать новый список.
 
-# swap_slice_in_list([1, 2, 3, 'hello'], [10, 20], 0, 2) => [10, 20, 3, 'hello']
+# swap_slice_in_list([1, 2, 3, 'hello'], [10, 20], 0, 2) =>
+# [10, 20, 3, 'hello']
 
 ...
 
@@ -41,3 +42,8 @@
 
 ...
 
+
+def func(list_: list):
+    new_list = list_[:]
+    new_list.append(4)
+    return new_list
