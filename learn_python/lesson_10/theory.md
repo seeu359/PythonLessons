@@ -134,5 +134,3 @@ print('some_key' in dictionary) # False
 Примеры
 
 Практика №3, №4
-
-
