@@ -30,3 +30,13 @@
 # get_user_request(request, methods=('POST', 'PUT',)) => 'Some data for request
 # get_user_request(request, methods=('GET',)) => 'Method POST is not allowed
 # get_user_request(request2, methods=('DELETE',)) => Method is not defined
+
+
+def get_user_request(user_request: dict, allows_methods=('POST', 'PUT')):
+    if 'method' not in user_request:
+        return 'Method is not defined'
+
+    method_value = user_request.get('method')
+    if method_value in allows_methods:
+        return user_request.get('data')
+    return f'Method {method_value} is not allowed'
