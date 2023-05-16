@@ -1,24 +1,24 @@
-# Пример 1
+# # Пример 1
+#
+# def debug_decorator(func):
+#     def wrapper(*args, **kwargs):
+#         print("Вызов функции:", func.__name__)
+#         print("Аргументы:", args, kwargs)
+#         result = func(*args, **kwargs)
+#         print("Результат:", result)
+#         return result
+#     return wrapper
+#
+#
+# @debug_decorator
+# def add_numbers(x, y):
+#     return x + y
+#
+# print(add_numbers(2, 3))
 
-def debug_decorator(func):
-    def wrapper(*args, **kwargs):
-        print("Вызов функции:", func.__name__)
-        print("Аргументы:", args, kwargs)
-        result = func(*args, **kwargs)
-        print("Результат:", result)
-        return result
-    return wrapper
 
-
-@debug_decorator
-def add_numbers(x, y):
-    return x + y
-
-print(add_numbers)
 
 ###################
-
-# Пример 2
 
 
 def count_calls(func):
@@ -34,3 +34,5 @@ def count_calls(func):
 @count_calls
 def my_func():
     print("Hello, world!")
+
+a = '1, 2, 3' # => [1, 2, 3]

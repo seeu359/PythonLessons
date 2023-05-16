@@ -46,3 +46,4 @@ def counter():
     return inner
 
 a = '1 2 10 14 16' # => [1, 2, 10, 14, 16]
+
