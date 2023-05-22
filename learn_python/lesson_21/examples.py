@@ -34,5 +34,3 @@ def count_calls(func):
 @count_calls
 def my_func():
     print("Hello, world!")
-
-a = '1, 2, 3' # => [1, 2, 3]

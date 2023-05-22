@@ -4,7 +4,6 @@
 # возможные комбинации цветов и размеров. Пример:
 # get_tshirts(['black', 'red'], ['S', 'M', 'L']) => [('black', 'S'), ('black', 'M'), ('black', 'L'), ('red', 'S'), ...]
 
-
 ...
 
 # Практика 2
@@ -33,3 +32,6 @@
 a = ['+7(903)1112232', '+8(999)22322', '8(999)2232222']
 
 b = [number for number in a if len(number.split(')')[1]) == 7 and number.startswith('+')]
+
+
+a = ['1231231', 'weqqwe']
