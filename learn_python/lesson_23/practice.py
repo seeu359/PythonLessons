@@ -1,4 +1,4 @@
-from itertools import cycle
+from itertools import count
 
 # Практика 1
 # Необходимо определить функцию-генератор с именем get_sum, которая бы возвращала текущую сумму чисел
@@ -36,7 +36,24 @@ from itertools import cycle
 # next(a) => 13
 # next(a) => 19
 
-...
+
+def get_prime_numbers():
+    for number in count(3):
+        count_divider = 0
+        for i in range(2, number):
+            if number % i == 0:
+                count_divider += 1
+        if count_divider == 0:
+            yield number
+
+
+a = get_prime_numbers()
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
+print(next(a))
 
 
 # Практика 4

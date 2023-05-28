@@ -5,19 +5,23 @@ def iterate(x0, m):
         x *= m
 
 
-# for n in iterate(1, 1.2):
-#     print(n)
-#     if n > 3:
-#         break
+# a = iterate(1, 1.1)
+# for _ in range(20):
+#     print(next(a))
 
 
-def f():
-    print('Initializing...')
-    yield 'one'
-    print('Continue...')
-    yield 'two'
-    print('Stopping...')
+# def f():
+#     print('Initializing...')
+#     yield 'one'
+#     print('Continue...')
+#     yield 'two'
+#     print('Stopping...')
+#
+#
+# i = f()
+# print(next(i))
+# print(next(i))
+# print(next(i))
 
-i = f()
 
-b = iter(i)
+def get_prime_numbers(numbers):
