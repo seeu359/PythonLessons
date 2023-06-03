@@ -22,6 +22,3 @@ def iterate(x0, m):
 # print(next(i))
 # print(next(i))
 # print(next(i))
-
-
-def get_prime_numbers(numbers):

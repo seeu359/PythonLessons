@@ -37,23 +37,6 @@ from itertools import count
 # next(a) => 19
 
 
-def get_prime_numbers():
-    for number in count(3):
-        count_divider = 0
-        for i in range(2, number):
-            if number % i == 0:
-                count_divider += 1
-        if count_divider == 0:
-            yield number
-
-
-a = get_prime_numbers()
-print(next(a))
-print(next(a))
-print(next(a))
-print(next(a))
-print(next(a))
-print(next(a))
 
 
 # Практика 4
@@ -68,6 +51,8 @@ print(next(a))
 # print(infinite([], 1000)) => Пустая строка
 # print(infinite([7], 4)) => 7777
 
-
 ...
 
+a = [1, 2, 3, 4]
+
+print(a)

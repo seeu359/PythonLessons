@@ -62,3 +62,4 @@
 # get_square(8) => Square 8 is equal 64(Takes from cache)
 
 ...
+
