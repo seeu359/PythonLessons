@@ -1,25 +1,26 @@
-# Example 1
+# # Example 1
+#
+# class Person(object):
+#
+#     def __init__(self, name, surname):
+#         self.full_name = name + surname
+#
+#
+# bob = Person('Bob', 'Hello')
 
-class Person:
 
-    def __init__(self, name):
-        self.name = name
+# Example 2
 
-
-bob = Person('Bob')
-# alice = Person()
-
-
-## Example 2
-
-class Person:
-    def __init__(self, name):
-        self.name = name
-    def __len__(self):
-        return len(self.name)
-
-tom = Person('Thomas')
-len(tom)
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
+#
+#     def __len__(self):
+#         return 10000000
+#
+# tom = Person('Thomaeqewrs')
+#
+# print(len(tom))
 
 # Протокол обращения по индексам
 
@@ -29,8 +30,11 @@ class PersonIndex:
         self.name = name
 
     def __getitem__(self, item):
-        return self.name[2]
+        raise Exception('Нельзя обращаться по индексу')
+
 
 
 new_bob = PersonIndex('Bob')
-print(new_bob[0])
+
+print(new_bob[1])
+print(len)

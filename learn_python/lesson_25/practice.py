@@ -24,6 +24,24 @@
 # points укажите цвет 'yellow'. Для создания объектов используй генератор списков
 
 
+class Point:
+
+    def __init__(self, x, y, color='black'):
+        self.x = x
+        self.y = y
+        self.color = color
+
+points = []
+
+for coords in range(1, 1000, 2):
+    if coords == 3:
+        point = Point(coords, coords, color='yellow')
+        continue
+    point = Point(coords, coords)
+    points.append(point)
+
+print(points)
+
 # 3
 
 # Объяви класс Graph, объекты которого можно было бы создавать с помощью команды:
