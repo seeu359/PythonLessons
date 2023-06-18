@@ -24,3 +24,26 @@
 #
 # norm2(vector) - для вычисления квадратической нормы vector - переданного объекта класса RadiusVector2D
 # (квадратическая норма вектора: x*x + y*y)
+
+
+class A:
+    MIN_COORD = ...
+
+
+    def __init__(self, x, y):
+        self.__x = x
+        self.__y = y
+
+    @property
+    def x(self):
+        return self.__x
+
+    # @x.setter
+    # def x(self, value):
+    #     if value > 10:
+    #         print('Some')
+    #     else:
+    #         self.__x = value
+
+a_class = A(2, 3)
+print(a_class.x)
