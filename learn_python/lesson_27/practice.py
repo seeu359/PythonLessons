@@ -41,22 +41,6 @@
 
 # Пусть в программе объявлен следующий базовый класс с именем GenericView:
 
-class GenericView:
-    def __init__(self, methods=('GET',)):
-        self.methods = methods
-
-    def get(self, request):
-        return ""
-
-    def post(self, request):
-        pass
-
-    def put(self, request):
-        pass
-
-    def delete(self, request):
-        pass
-
 
 # Здесь каждый метод отвечает за обработку своего типа запроса. Параметр methods - это кортеж или список,
 # состоящий из набора разрешенных запросов: строк с именами соответствующих методов (как правило, пишут заглавными
@@ -108,3 +92,32 @@ class GenericView:
 
 ...
 
+class GenericView:
+    def __init__(self, methods=('GET',)):
+        self.methods = methods
+
+    def get(self, request):
+        return "Method Get"
+
+    def post(self, request):
+        pass
+
+    def put(self, request):
+        pass
+
+    def delete(self, request):
+        pass
+
+
+class DetailView(GenericView):
+
+    def get(self, request):
+        return super().get(request)
+
+
+    def render_request(self, request, method):
+        method = 'GET'
+        _method = getattr(self, 'get')
+
+
+dv = DetailView(('GET', 'POST'))
