@@ -1,3 +1,5 @@
+from learn_python.lesson_28.example2 import example_func
+
 # Example 1
 import sys
 
@@ -10,8 +12,8 @@ l = []
 
 # try:
 #    1 / 0
-# except IndexError:
-#     print('Страница временно недоступна, пожалуйста зайдите позже')
+# except:
+#     print('На ноль делить нельзя')
 
 # Example 3
 #
@@ -25,12 +27,22 @@ l = []
 #     print('Возникла какая-то ошибка ')
 
 
-# Examples 4
 
-f = open('data.txt')
+
 try:
+    f = open('data.txt')
     text = f.read()
     words = len(text.split())
     f.close()
 finally:
+    print('Hello')
     f.close()
+
+# try:
+#     example_func()
+# except ValueError:
+#     print('Произошла ошибка в логике работы программы')
+# except IOError:
+#     print('Закончилось место на диске')
+# except Exception:
+#     print('Произошла какая-то ошибка')

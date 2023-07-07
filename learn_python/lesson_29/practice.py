@@ -87,5 +87,46 @@
 # remove_object(obj) - удаление объекта obj из списка объектов для продажи;
 # get_objects() - возвращает список из всех объектов для продажи.
 
-...
 
+class Good:
+    def __init__(self, id, name, price):
+        self.id = id
+        self.name = name
+        self.price = price
+
+    def get_data(self):
+        print(self.__dict__)
+        id = self.__dict__.pop('id')
+        name = self.__dict__.pop('name')
+        price = self.__dict__.pop('price')
+        print(self.__dict__)
+        result = f'Товар {id}, {name}, {price}. Свойства: '
+
+        for key, value in self.__dict__.items():
+            result += f'{key}:{value}; '
+        return result
+
+class RealGood(Good):
+    def __init__(self, id, name, price, weight, dims):
+        super().__init__(id, name, price)
+        self.weight = weight
+        self.dims = dims
+
+
+class InfoGood(Good):
+    def __init__(self, id, name, price, memory, frm):
+        super().__init__(id, name, price)
+        self.__memory = memory
+        self.__frm = frm
+
+    @property
+    def memory(self):
+        ...
+        return self.__memory
+    @memory.setter
+    def memory(self, value):
+        self.__memory = value
+
+
+info_good = InfoGood(1, 'some name', 5000, 4000, 2200)
+print(info_good.memory)
