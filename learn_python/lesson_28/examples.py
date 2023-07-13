@@ -1,48 +1,23 @@
-from learn_python.lesson_28.example2 import example_func
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
-# Example 1
-import sys
+    @property
+    def points(self):
+        return self.x, self.y
 
-# raise Exception('Method POST is not allowed')
 
-
-# Example 2
-
-l = []
-
-# try:
-#    1 / 0
-# except:
-#     print('На ноль делить нельзя')
-
-# Example 3
-#
-# users = {'Alex': 'Hello'}
-#
-# try:
-#     user = users['Kirill']
-# except (KeyError, IndexError):
-#     print('No users with such name found!')
-# except Exception:
-#     print('Возникла какая-то ошибка ')
+class Rectangle:
+    def __init__(self, *obj):
+        if len(obj) == 2:
+            self.sp = obj[0]
+            self.ep = obj[1]
+        else:
+            self.sp = Point(obj[0], obj[1])
+            self.ep = Point(obj[2], obj[3])
 
 
 
-
-try:
-    f = open('data.txt')
-    text = f.read()
-    words = len(text.split())
-    f.close()
-finally:
-    print('Hello')
-    f.close()
-
-# try:
-#     example_func()
-# except ValueError:
-#     print('Произошла ошибка в логике работы программы')
-# except IOError:
-#     print('Закончилось место на диске')
-# except Exception:
-#     print('Произошла какая-то ошибка')
+rect2 = Rectangle(1, 2, 3, 4)
+print(rect2.sp.points, rect2.ep.points)
