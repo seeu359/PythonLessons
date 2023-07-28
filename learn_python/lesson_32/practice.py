@@ -3,7 +3,7 @@
 # date = DateString(date_string)
 # где date_string - строка с датой в формате:
 #
-# "DD.MM.YYYY"
+# "DDMM.YYYY"
 #
 # здесь DD - день (целое число от 1 до 31); MM - месяц (целое число от 1 до 12); YYYY - год (целое число от 1 до 3000).
 # Например:
@@ -39,3 +39,18 @@
 
 ...
 
+class A:
+
+    def __init__(self, date_string):
+        ...# check
+        self.date_string = date_string
+
+    def __str__(self):
+        date_split = self.date_string.split('.')
+        if len(date_split[0]) == 1:
+
+
+
+a = A('Привет')
+
+print(a)

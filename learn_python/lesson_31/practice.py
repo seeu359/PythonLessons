@@ -186,7 +186,6 @@
 ...
 
 
-
 class RetriveMixin:
     def get(self, request):
         return "GET: " + request.get('url')
@@ -200,3 +199,10 @@ class CreateMixin:
 class UpdateMixin:
     def put(self, request):
         return "PUT: " + request.get('url')
+
+
+class A(UpdateMixin):
+
+    def some(self, request):
+        method = self.__getattribute__('put')
+        method(request)
