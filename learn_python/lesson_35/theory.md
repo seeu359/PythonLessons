@@ -71,7 +71,7 @@ Django позволяет не придумывать свои способы у
 
     from django.urls import path
 
-    from hexlet_django_blog.article import views
+    from project_name.app_name import views
 
     urlpatterns = [
         path('', views.index),
@@ -85,11 +85,11 @@ Django позволяет не придумывать свои способы у
 
     from django.urls import path, include  # <- добавлен include
 
-    from hexlet_django_blog import views
+    from project_name import views
 
     urlpatterns = [
         path('', views.index),
-        path('some_path/', include('hexlet_django_blog.article.urls')),  # <- новая строчка
+        path('some_path/', include('project_name.app_name.urls')),  # <- новая строчка
         path('admin/', admin.site.urls),
     ]
 
