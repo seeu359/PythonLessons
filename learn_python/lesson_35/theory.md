@@ -89,7 +89,7 @@ Django позволяет не придумывать свои способы у
 
     urlpatterns = [
         path('', views.index),
-        path('some_path/', include('project_name.app_name.urls')),  # <- новая строчка
+        path('some_path/', include('app_name.urls')),  # <- новая строчка
         path('admin/', admin.site.urls),
     ]
 
