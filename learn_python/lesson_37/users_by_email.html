@@ -1,0 +1,5 @@
+<li>
+{% for user in users %}
+    <ol>{{ user.first_name }} {{ user.last_name }} - {{ user.email }}</ol>
+    {% endfor %}
+</li>
